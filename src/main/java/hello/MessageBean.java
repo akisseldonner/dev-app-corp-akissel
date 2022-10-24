@@ -9,6 +9,8 @@ package hello;
 
 import java.beans.*;
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.time.LocalTime;  
 
 /**
  *
@@ -102,4 +104,17 @@ public class MessageBean implements Serializable {
         }
         return "";
     }
+
+    public String getMsg() {
+        LocalDateTime tempo = LocalDateTime.now();
+
+        if (tempo.getHour() >= 6 && tempo.getHour() < 12) {
+            return getMsgManha();
+        } else if (tempo.getHour() >= 12 && tempo.getHour() < 18) {
+            return getMsgTarde();
+        }
+
+        return getMsgNoite();
+    }
+
 }

@@ -17,28 +17,7 @@
         <h1>Aplicativo AAA HelloWorld</h1>
         <% String lang = request.getParameter("lang"); %>
         <h2><jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
-        <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>!</h2>
-
-<script type="text/javascript">
-
-    var myDate = new Date();
-    var name = window.prompt("Please enter your name: ");
-
-    if (myDate.getHours() < 12) {
-        document.write(<jsp:getProperty name="myBean" property="msgManha"/>);
-    }
-    else if(myDate.getHours() >=12 && myDate.getHours() <=17){
-        document.write(<jsp:getProperty name="myBean" property="msgTarde"/>);
-    }
-    else if (myDate.getHours() > 17 && myDate.getHours() <=24) {
-        document.write(<jsp:getProperty name="myBean" property="msgNoite"/>);
-    }
-    else
-    {
-        document.write(<jsp:getProperty name="myBean" property="msgNoite"/>);
-    }
-</script>
-
+        <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>! <jsp:getProperty name="myBean" property="msgAlt"/></h2>  
         <jsp:getProperty name="myBean" property="msg2"/> <jsp:getProperty name="myBean" property="aut"/>
     </body>
 </html>
