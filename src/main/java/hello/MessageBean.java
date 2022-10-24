@@ -111,7 +111,7 @@ public class MessageBean implements Serializable {
             case "pt":
                 return "Bem vindo ao Hello World do Akissel";
             case "en":
-                return "Welcome to Akissel's Hello World";
+                return "Welcome to Akissels Hello World";
             case "de":
                 return "Willkommen in Akissels Hello World";
             case "fr":
