@@ -106,19 +106,6 @@ public class MessageBean implements Serializable {
         return "";
     }
 
-    public String getMsgHeader() {
-        switch (this.lang){
-            case "pt":
-                return "Bem vindo ao Hello World do Akissel";
-            case "en":
-                return "Welcome to Akissels Hello World";
-            case "de":
-                return "Willkommen in Akissels Hello World";
-            case "fr":
-                return "Bienvenue dans le Hello World dAkissel";
-        }
-        return "";
-    }
 
     public String getMsgAlt() {
         LocalDateTime tempo = LocalDateTime.now();
