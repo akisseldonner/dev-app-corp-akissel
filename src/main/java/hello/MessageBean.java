@@ -57,4 +57,46 @@ public class MessageBean implements Serializable {
         }
         return "";
     }
+
+    public String getMsgNoite() {
+        switch (this.lang){
+            case "pt":
+                return "Boa Noite";
+            case "en":
+                return "Good Night";
+            case "de":
+                return "Guten Abend";
+            case "fr":
+                return "Bonsoir";
+        }
+        return "";
+    }
+
+    public String getMsgTarde() {
+        switch (this.lang){
+            case "pt":
+                return "Boa Tarde";
+            case "en":
+                return "Good Afternoon";
+            case "de":
+                return "Guten Nachmittag";
+            case "fr":
+                return "Bon après-midi";
+        }
+        return "";
+    }
+
+    public String getMsgManha() {
+        switch (this.lang){
+            case "pt":
+                return "Bom dia";
+            case "en":
+                return "Good Morning";
+            case "de":
+                return "Guten Morgen";
+            case "fr":
+                return "Bonjour";
+        }
+        return "";
+    }
 }
