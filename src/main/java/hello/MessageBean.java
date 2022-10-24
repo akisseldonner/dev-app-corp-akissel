@@ -22,6 +22,7 @@ public class MessageBean implements Serializable {
     private String lang;
     private String msg;
     private String msg2;
+    private String msgHeader;
     private String msgNoite;
     private String msgTarde;
     private String msgManha;
@@ -101,6 +102,20 @@ public class MessageBean implements Serializable {
                 return "Guten Morgen";
             case "fr":
                 return "Bonjour";
+        }
+        return "";
+    }
+
+    public String getMsgHeader() {
+        switch (this.lang){
+            case "pt":
+                return "Bem vindo ao Hello World do Akissel";
+            case "en":
+                return "Welcome to Akissel's Hello World";
+            case "de":
+                return "Willkommen in Akissels Hello World";
+            case "fr":
+                return "Bienvenue dans le Hello World d'Akissel";
         }
         return "";
     }
