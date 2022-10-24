@@ -19,6 +19,6 @@
 
         <h2><jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
         <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>! <jsp:getProperty name="myBean" property="msgAlt"/></h2>  
-        <jsp:getProperty name="myBean" property="msg2"/> Akissel Footer:  <jsp:getProperty name="myBean" property="aut"/> © 2009-2022
+       Akissel Footer:  <jsp:getProperty name="myBean" property="msg2"/>  <jsp:getProperty name="myBean" property="aut"/> © 2009-2022
     </body>
 </html>
