@@ -14,8 +14,9 @@
     </head>
     <body>
         <jsp:useBean id="myBean" class="hello.MessageBean"/>
-   <header>     <h1><jsp:getProperty name="myBean" property="msgHeader"/></h1>   </header>   
         <% String lang = request.getParameter("lang"); %>
+   <header>     <h1><jsp:getProperty name="myBean" property="msgHeader"/></h1>   </header>   
+
         <h2><jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
         <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>! <jsp:getProperty name="myBean" property="msgAlt"/></h2>  
         <jsp:getProperty name="myBean" property="msg2"/> <jsp:getProperty name="myBean" property="aut"/>
