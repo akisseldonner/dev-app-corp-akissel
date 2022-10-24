@@ -1,2 +1,2 @@
 # dev-app-corp-akissel
-https://damp-mesa-45515.herokuapp.com/
+https://dev-app-corp-akissel.herokuapp.com/
