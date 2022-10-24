@@ -20,12 +20,15 @@ public class MessageBean implements Serializable {
     private String lang;
     private String msg;
     private String msg2;
+    private String msgNoite;
+    private String msgTarde;
+    private String msgManha;
         
     public MessageBean() {
     }
     
     public String getAut() {
-        return "José Viterbo";
+        return "Akissel";
     }
     
     public void setLang(String value) {
@@ -40,7 +43,7 @@ public class MessageBean implements Serializable {
             case "de":
                 return "Hallo";
             case "fr":
-                return "Bonjour";
+                return "Salut";
         }
         return "";
     }
