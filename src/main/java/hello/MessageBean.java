@@ -105,7 +105,7 @@ public class MessageBean implements Serializable {
         return "";
     }
 
-    public String getMsg() {
+    public String getMsgAlt() {
         LocalDateTime tempo = LocalDateTime.now();
 
         if (tempo.getHour() >= 6 && tempo.getHour() < 12) {
